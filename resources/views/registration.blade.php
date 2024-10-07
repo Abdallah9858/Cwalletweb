@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
+    <title>Registration</title>
     <style>
         body {
             background-color: #f9e96b; /* Less bright yellow */
@@ -26,9 +26,7 @@
             margin-bottom: 100px; /* Margin below the heading */
         }
         input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="date"],
+       ,
         select {
             width: 100%; /* Full width */
             padding: 10px; /* Padding for inputs */
@@ -58,15 +56,7 @@
         <form action="#" method="POST"> <!-- Update the action with your registration route -->
             @csrf <!-- Include CSRF token for security -->
             <input type="text" name="name" placeholder=" Name" required>
-            <select name="gender" required>
-                <option value="" disabled selected>Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-           
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
+
             <button type="submit">Register</button>
         </form>
     </div>
